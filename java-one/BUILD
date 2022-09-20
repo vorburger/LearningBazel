@@ -1,0 +1,5 @@
+java_binary(
+    name = "JavaOne",
+    srcs = glob(["src/main/java/**/*.java"]),
+    main_class = "ch.vorburger.learniningbazel.Main"
+)

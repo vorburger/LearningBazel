@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-set -euxo pipefail
+set -euo pipefail
 
-# TODO foreach sub-directory, do b test ...
+for dir in *; do
+    ( echo "Testing $dir..." && cd "$dir" && bazelisk test )
+done
