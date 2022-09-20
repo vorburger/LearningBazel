@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-for dir in *; do
+for dir in $(find . -maxdepth 1 -type d \( ! -name ".*" \)); do
     ( echo "Testing $dir..." && cd "$dir" && bazelisk test )
 done
+
+# TODO Print SUCCESS! or FAIL:( based on echo $?
