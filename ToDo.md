@@ -10,3 +10,7 @@
    - [bazelbuild/vscode-bazel](https://github.com/bazelbuild/vscode-bazel) alone does [not have Java support](https://github.com/bazelbuild/vscode-bazel/issues/281)
 
 1. https://github.com/salesforce/bazel-mystery
+
+1. https://github.com/vorburger/enola/compare/rules_nixpkgs-for-andyscott-misc_rules-shellcheck
+   - https://bazel.build/concepts/platforms
+   - https://bazel.build/extending/toolchains
