@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package study.learn.bazel;
+
+option java_string_check_utf8 = true;
+option java_package = "study.learn.bazel.proto";
+option java_multiple_files = true;
+option go_package = "study/learn/bazel";
+
+message Hello {
+  string to_who = 1;
+}
