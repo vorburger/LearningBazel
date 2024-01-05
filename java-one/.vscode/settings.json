@@ -1,0 +1,22 @@
+{
+  "bazel.projectview.open": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    ".eclipse": false,
+    ".vscode": false,
+    "src": false,
+    "bazel-bin": false,
+    "bazel-java-one": false,
+    "bazel-out": false,
+    "bazel-testlogs": false
+  }
+}
