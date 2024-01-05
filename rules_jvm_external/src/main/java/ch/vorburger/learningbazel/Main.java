@@ -1,11 +1,13 @@
 package ch.vorburger.learniningbazel;
 
+import com.google.common.base.MoreObjects;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println(greeting());
+        System.out.println(new Main().greeting());
     }
 
-    static String greeting() {
-        return "hello, world";
+    String greeting() {
+        return MoreObjects.toStringHelper(this).add("message", "hello, world").toString();
     }
 }
