@@ -13,6 +13,10 @@ Pre-requisite: Install [Bazelisk](https://github.com/bazelbuild/bazelisk), e.g. 
 ## Offline
 
 * https://bazel.build/external/faq#how-do-i-prepare-and-run-an-offline-build
+* https://bazel.build/run/build#fetching-external-dependencies
+* `bazel fetch` (slow; huge, all platforms)
+* `bazel fetch //...`
 * `bazelisk fetch --repo @enola_maven`
-* `bazelisk test --nofetch //...`
+* `bazelisk test --nofetch --fetch=false //...`
+* https://github.com/bazelbuild/bazel/issues/18934
 * https://github.com/grpc/grpc-java/issues/12189
