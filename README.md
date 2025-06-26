@@ -14,7 +14,7 @@ Pre-requisite: Install [Bazelisk](https://github.com/bazelbuild/bazelisk), e.g. 
 
 * https://bazel.build/external/faq#how-do-i-prepare-and-run-an-offline-build
 * https://bazel.build/run/build#fetching-external-dependencies
-* `bazel fetch` (slow; huge, all platforms)
+* `bazel fetch --platforms=@platforms//linux` - but it's slow, as even that still grabs (at least some) `windows` and `macos`
 * `bazel fetch //...`
 * `bazelisk fetch --repo @enola_maven`
 * `bazelisk test --nofetch --fetch=false //...`
