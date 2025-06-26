@@ -9,3 +9,10 @@ Pre-requisite: Install [Bazelisk](https://github.com/bazelbuild/bazelisk), e.g. 
 `./test` will build and test everything. It's incremental, and should run (very) fast the 2nd time you launch it.
 
 [LearningBazelJavaVSC](https://github.com/vorburger/LearningBazelJavaVSC) is a more Java/VSC specific repo.
+
+## Offline
+
+* https://bazel.build/external/faq#how-do-i-prepare-and-run-an-offline-build
+* `bazelisk fetch --repo @enola_maven`
+* `bazelisk test --nofetch //...`
+* https://github.com/grpc/grpc-java/issues/12189
